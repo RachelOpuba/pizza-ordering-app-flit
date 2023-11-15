@@ -52,7 +52,7 @@ const links = [
             href={link.href}
                       >
            
-            <p className="uppercase text-md font-bold text-white my-2 py-4 px-4 border-b border-slate-800 hover:border-fuchsia-600 hover:text-fuchsia-600 transition text-center" onClick={()=> toggleMobileNav()}>{link.name}</p>
+            <p className="uppercase text-md font-bold text-white my-3 py-4 px-4 border-b border-slate-800 hover:border-fuchsia-600 hover:text-fuchsia-600 transition text-center" onClick={()=> toggleMobileNav()}>{link.name}</p>
           </Link>
         )
       )}
@@ -64,14 +64,14 @@ const links = [
     <>
     <nav className=" sticky top-0 inset-x-0  ">
     <div className="w-full  max-w-[1440px] h-[100px] px-4 ">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center h-full">
             
                 <Image
                 src={"/logo.png"}
                 width={70}
                 height={50}
                 alt="Logo"
-                className="self-center h-12 w-12 md:h-20 md:w-20 "
+                className="self-center h-[48px] w-[52px] md:h-20 md:w-20 "
                 />
 
                 <Image 
@@ -79,7 +79,7 @@ const links = [
                 width={150}
                 height={100}
                 alt="Logo"
-                className="hidden lg:block"
+                className="hidden lg:block self-start"
                 />
 
            
