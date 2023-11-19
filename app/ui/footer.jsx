@@ -62,7 +62,7 @@ const footer = () => {
                       <FaInstagram className="text-white text-2xl"/>
                     </div>
                   </div>
-                  <p className="font-semibold text-[#7e7773] md:text-sm">Signup and get exclusive offers and coupon codes</p>
+                  <p className="font-semibold text-[#7e7773] text-sm md:text-base">Signup and get exclusive offers and coupon codes</p>
             </div>
             
             

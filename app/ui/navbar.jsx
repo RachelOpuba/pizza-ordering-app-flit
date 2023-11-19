@@ -62,7 +62,7 @@ const links = [
     </>
   return (
     <>
-    <nav className=" sticky top-0 inset-x-0  ">
+    <nav className=" sticky top-0 inset-x-0  bg-white z-50">
     <div className="w-full  max-w-[1440px] h-[100px] px-4 ">
         <div className="flex justify-between items-center h-full">
             
