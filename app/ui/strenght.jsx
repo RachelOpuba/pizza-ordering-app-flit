@@ -16,8 +16,8 @@ const strenght = () => {
                 </div>
             ))}
         </div>
-        <div className="absolute top-4 md:top-16 right-4 ">
-          <Image src={"/pizza-pice.png"} height={250} width={240} alt="Half Pizza" className="h-[80px] md:[250px] w-[80px] md:[240px]"/>
+        <div className="absolute top-4 md:top-24 lg:top-16 right-4 ">
+          <Image src={"/pizza-pice.png"} height={250} width={240} alt="Half Pizza" className="h-[80px] md:h-[150px] xl:h-[180px]  w-[100px] md:w-[200px] xl:w-[240px]"/>
         </div>
     </div>
     </>
