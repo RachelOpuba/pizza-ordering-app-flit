@@ -12,7 +12,7 @@ const strenght = () => {
                 <div key={index} className="flex flex-col">
                     <Image src={info.imgRef} height={40} width={40} alt="Icon" className="h-[35px] w-[30px]"/>
                     <p className="font-bold pt-3 pb-4">{info.title}</p>
-                    <p>{info.desc}</p>
+                    <p >{info.desc}</p>
                 </div>
             ))}
         </div>

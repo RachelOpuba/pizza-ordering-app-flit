@@ -168,7 +168,7 @@ const ButtonWrapper = ({ showSpinner }) => {
                     <div className="bg-white p-1  font-semibold mb-1 text-sm flex justify-center items-center">
                         <button onClick={()=> setShowModal(true)} className="text-[#3d7c82] uppercase">Cash on Delivery</button>
                     </div>
-                    <PayPalScriptProvider options={{ clientId: "test", components: "buttons", currency: "USD", 'disable-funding': 'credit,card,p24' }}>
+                    <PayPalScriptProvider options={{ clientId: "test", components: "buttons", currency: "USD", 'disable-funding': 'credit,card,p24' }} className="z-10">
                     <ButtonWrapper showSpinner={false} />
                     </PayPalScriptProvider>
                     </div>
@@ -180,7 +180,7 @@ const ButtonWrapper = ({ showSpinner }) => {
                 )}
 
               <Modal isVisible={showModal} onClose={()=> setShowModal(false)}>
-              <form onSubmit={handleSubmit} className="text-[#797f88]  flex flex-col bg-white  w-[480px] py-6 md:py-12  px-10 font-medium rounded-2xl">
+              <form onSubmit={handleSubmit} className="text-[#797f88] z-40 flex flex-col bg-white  w-[480px] py-6 md:py-12  px-10 font-medium rounded-2xl">
                 <h2 className="text-[#202942] text-3xl mb-2">You will pay $12 on delivery.</h2>
 
                 <label  className="flex flex-col gap-2">
@@ -190,7 +190,7 @@ const ButtonWrapper = ({ showSpinner }) => {
                     name="surname"
                     value={formData.surname}
                     onChange={handleInputChange}
-                    className=" border border-[#989996] z-[200] p-1 placeholder:text-[#939596] placeholder:text-sm"
+                    className=" border border-[#989996] z-20 p-1 placeholder:text-[#939596] placeholder:text-sm"
                     placeholder="John Doe" 
                     />
                 </label>
