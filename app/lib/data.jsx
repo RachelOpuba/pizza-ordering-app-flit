@@ -75,25 +75,37 @@ export const InformationArr = [
       title: "Burga pizza",
       price: 20,
       imgRef: "/sandwich.jpg",
-      desc: 'This is a burga pizza'
+      desc: 'This is a burga pizza',
+      id: "pizza1",
+      category:"Chicken, Launch, Pizza, Burger",
+      tags:"Healthy, Organic, Chicken, Sauce",
     },
     {
       title: "Burga pizza",
       price: 20,
       imgRef: "/sandwich.jpg",
-      desc: 'This is a burga pizza'
+      desc: 'This is a burga pizza',
+      id: "pizza2",
+      category:"Chicken, Launch, Pizza, Burger",
+      tags:"Healthy, Organic, Chicken, Sauce",
     },
     {
       title: "New pizza",
       price: 10,
       imgRef: "/tomato-piz.png",
-      desc: 'This is a burga pizza'
+      desc: 'This is a burga pizza',
+      id: "pizza3",
+      category:"Chicken, Launch, Pizza, Burger",
+      tags:"Healthy, Organic, Chicken, Sauce",
     },
     {
       title: "Greek pizza",
       price: 20,
       imgRef: "/nut-piza.png",
-      desc: 'This is a greek pizza'
+      desc: 'This is a greek pizza',
+      id: "pizza4", 
+      category:"Chicken, Launch, Pizza, Burger",
+      tags:"Healthy, Organic, Chicken, Sauce",
     },
     
   ];
@@ -102,22 +114,22 @@ export const InformationArr = [
   export const StrenghtArr = [
     {
       title: "All Kinds of Foods",      
-      imgRef: "/sandwich.jpg",
+      imgRef: "/food.png",
       desc: 'Lorem Ipsum is simply dummy text of the printing and type setting industry.'
     },
     {
       title: "All Kinds of Foods",     
-      imgRef: "/sandwich.jpg",
+      imgRef: "/fan.png",
       desc: 'Lorem Ipsum is simply dummy text of the printing and type setting industry.'    
     },
     {
       title: "All Kinds of Foods",   
-      imgRef: "/tomato-piz.png",
+      imgRef: "/face.png",
       desc: 'Lorem Ipsum is simply dummy text of the printing and type setting industry.'    
     },
     {
       title: "All Kinds of Foods",      
-      imgRef: "/nut-piza.png",
+      imgRef: "/location.png",
       desc: 'Lorem Ipsum is simply dummy text of the printing and type setting industry.'    
     },
     

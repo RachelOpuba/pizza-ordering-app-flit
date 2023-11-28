@@ -69,7 +69,7 @@ const footer = () => {
             <div >
                  
                   
-                  <Link href={"/"} className="flex items-center mt-4 lg:mt-8">
+                  <Link href={"/signup"} className="flex items-center mt-4 lg:mt-8">
                     <button className="uppercase bg-[#ffb000] text-[#fffdc8]  font-bold py-[6px] px-4 rounded-full">Sign Up</button>
                   </Link>
             </div>

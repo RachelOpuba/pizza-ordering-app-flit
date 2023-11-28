@@ -76,7 +76,7 @@ const links = [
 
                 <Image 
                 src={"/redimg.png"}
-                width={150}
+                width={200}
                 height={100}
                 alt="Logo"
                 className="hidden lg:block self-start"
@@ -102,7 +102,15 @@ const links = [
 
             <div className="flex items-center gap-4">
               <MagnifyingGlassIcon className="hidden md:block w-6 h-6"/>
-              <ShoppingCartIcon className="text-blue-500 w-8 h-8"/>   
+              <div className="flex relative" >
+
+              <Link href={'/cart'}> <ShoppingCartIcon className="text-blue-500 w-8 h-8 "/> 
+               <div className="bg-red-500 h-6 w-6 rounded-full text-white flex justify-center items-center p-2 absolute right-[-10px] top-[-10px]">
+                  <p className="font-semibold">0</p>
+                </div> 
+                </Link> 
+              </div>
+              
               
               <div className="block md:hidden ms-8 z-[50]">
               {mobileNav ?  <XMarkIcon className="w-10 h-10 text-white" onClick={()=> toggleMobileNav()}/>: <Bars3Icon className="w-10 h-10 " onClick={()=>toggleMobileNav()}/>  }

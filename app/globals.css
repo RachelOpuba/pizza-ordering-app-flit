@@ -4,35 +4,11 @@
 
 
 
-@keyframes slideUnderline {
-    0% {
-      transform: scaleX(0);
-      transform-origin: 0% 0%;
-    }
-    100% {
-      transform: scaleX(1);
-      transform-origin: 0% 0%;
-    }
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
   }
-  
-  .underline-animation {
-    position: relative;
-    overflow: hidden;
+  51%, 100% {
+    opacity: 0;
   }
-  
-  .underline-animation::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px; /* Adjust the height of the underline as needed */
-    background-color: #db3125; /* Adjust the color of the underline as needed */
-    bottom: 0;
-    left: 0;
-    transform-origin: 100% 100%;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .underline-animation:hover::before {
-    transform: scaleX(1);
-  }
+}

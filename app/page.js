@@ -23,8 +23,15 @@ export default function Home() {
         </div>
 
       </div>
-
-      <Dishes/>
+      <div>
+          <div className="ps-4 mt-16">
+            <h2 className="text-[#e6230d] font-semibold text-xl pb-1">Popular Dishes</h2>
+            <h2 className="text-3xl font-bold  pb-12">Brows our Menu</h2>
+          </div>
+            
+            <Dishes/>
+      </div>
+      
       <Strenght/>
       <Testimonials/>
     

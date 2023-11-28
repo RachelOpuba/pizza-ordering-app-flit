@@ -1,5 +1,6 @@
 import Image from "next/image"
 import OrderButton from "./orderButton";
+import Link from "next/link";
 
 const hero = () => {
   return (
@@ -12,7 +13,9 @@ const hero = () => {
                 <h1 className="">Pinch of <span className="text-[#f72400]">Love</span></h1>
             </div>
             <p className="text-3xl max-w-full w-[80%] xl:max-w-[60%] text-[#242021] mt-6 leading-10 pb-8">Lorep Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <OrderButton/>
+            <Link href={'/products'}>
+              <OrderButton/>
+            </Link>
          </div>
          
 

@@ -3,6 +3,7 @@ import { DishesArr} from "../lib/data"
 import Image from "next/image"
 import OrderButton from "./orderButton";
 import StarRating from "./starRating";
+import Link from "next/link";
 
 
 
@@ -13,9 +14,8 @@ const dishes = () => {
       };
   return (
     <>
-        <div className="mt-16 px-4 inset-x-0">
-            <h2 className="text-[#e6230d] font-semibold text-xl pb-1">Popular Dishes</h2>
-            <h2 className="text-3xl font-bold  pb-12">Brows our Menu</h2>
+        <div className=" px-4 inset-x-0">
+            
 
             <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {DishesArr.map((dish, index)=>(
@@ -30,7 +30,10 @@ const dishes = () => {
                             </div>
                             <div ><StarRating initialRating={5} onChange={handleRatingChange} /></div>
                             <p className="pt-4 pb-8">{dish.desc}</p>
-                            <OrderButton/>
+                            <Link href={'/products'}>
+                                <OrderButton/>
+                            </Link>
+                            
                         </div>
                         
                     </div>
