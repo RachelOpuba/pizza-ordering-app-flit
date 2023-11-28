@@ -45,7 +45,7 @@ const Product = () => {
 
             <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {DishesArr.map((dish, index)=>(
-                  <Link href={`products/${dish.id}`}>
+                  <Link href={`products/${dish.id}`} key={index}>
                     <div key={index} className=" flex flex-col justify-between border shadow rounded-xl max-w-[500px]  h-[580px] p-4">
                         <div className="w-full flex justify-center h-[55%]">
                             <Image src={dish.imgRef} height={200} width={300} className="h-[300px] w-[300px]" alt="Icon"/>

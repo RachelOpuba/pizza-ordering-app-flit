@@ -3,16 +3,19 @@ import { useState } from "react"
 
 const Modal = ({isVisible, onClose, children}) => {
   
+  const [formData, setFormData] = useState({
+    surname: '',
+    phoneNumber: '',
+    address: '',
+  });
+  
     if(!isVisible) return null
 
     const handleClose = (e)=>{
         if(e.target.id === 'wrapper') onClose()
     }
-    const [formData, setFormData] = useState({
-        surname: '',
-        phoneNumber: '',
-        address: '',
-      });
+
+    
 
       const handleSubmit = (e) => {
         e.preventDefault();
